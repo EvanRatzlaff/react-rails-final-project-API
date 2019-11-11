@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Car.create(make: "Chevy", model: "s-10", year: 1976, color: "rusty-red", attraction_level: 9)
