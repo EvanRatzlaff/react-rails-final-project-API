@@ -16,9 +16,9 @@ export class CarTips extends Component {
             return(
                 <div>
             <h3>Here Are Some tips for your vehicle:</h3>
-            <h4>Your vehicle is {this.props.car.color} so be sure to wash it often to keep it looking great!</h4> 
-            <h4>Dont forget to change the oil in your {this.props.car.make} every 3000 miles</h4>
-            <h4>Optimize Performance by replacing your brakes after 6000 miles</h4>
+            <h4>Your vehicle has a "{this.props.car.color}" paint job so be sure to wash it often to keep it looking great!</h4> 
+            <h4>Dont forget to change the oil in your "{this.props.car.make}" every 3000 miles</h4>
+            <h4>Optimize Performance on your "{this.props.car.make}" by replacing your brakes after 6000 miles</h4>
             </div>
         )
 }

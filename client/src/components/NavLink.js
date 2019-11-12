@@ -8,8 +8,8 @@ import {Link} from 'react-router-dom'
                      <div className="container">
                          <Link to="/new" className="center hide-on-med-and-down">Design A Dream Car</Link>
                          <Link to="/cars" className="left hide-on-med-and-down">View Other Masterpieces</Link>
-                         <Link to="/cars/:id" className="right hide-on-med-and-down">Helpful Tips for Your Car</Link>
-                         
+                          {/* <Link to="/cars/:id" className="right hide-on-med-and-down">Helpful Tips for Your Car</Link>  */}
+                         {/* <Route exact path="/cars/:id" render={(routerprops) => <CarTips {...routerprops} />  } /> */}
                      </div>
                  </nav>
              )

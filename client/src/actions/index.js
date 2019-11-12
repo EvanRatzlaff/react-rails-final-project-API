@@ -8,11 +8,11 @@ export const addCar = car => {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(car)
+            body: JSON.stringify({car})
         })
         .then(res => res.json())
         .then(car => {
-            debugger
+            console.log("made it here - Car created", car)
             dispatch({type: "ADD_CAR", car})
            // history.push('/api/cars/:id')
         })

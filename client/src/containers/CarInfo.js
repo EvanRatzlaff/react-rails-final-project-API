@@ -6,12 +6,11 @@ export class CarInfo extends Component {
     constructor(props){
         super(props)
         this.state = {
-            car: {
                 make: '',
                 year:'',
                 color:'',
                 attraction_level:''
-            }
+            
         }
     };
 
@@ -45,7 +44,7 @@ export class CarInfo extends Component {
                     </div>
 
                     <div className="input-field">
-                    <input type="number" name="attractionLevel" id="attractionLevel" value={this.state.attraction_level} onChange={this.handleChange} />
+                    <input type="number" name="attraction_level" id="attractionLevel" value={this.state.attraction_level} onChange={this.handleChange} />
                     <label htmlFor="attractionLevel">Coolness Level</label>
                     </div>
                     <input type="submit" value="Create Your Car!" className="button" />

@@ -24,7 +24,7 @@ class App extends Component {
             <Route exact path="/" component={Homepage} />
             <Route exact path="/new" component={CarInfo} />
             <Route exact path="/cars" component={OtherCars} />
-            <Route exact path="/cars/:id" component={CarTips} />
+            <Route exact path="/cars/:id" render={(routerprops) => <CarTips {...routerprops} />  } />
        
 
             </Switch>
