@@ -9,7 +9,7 @@ const CarsReducer = (state = initialState, action) => {
             ...state,
             cars: [...state.cars, action.car]
         }
-        case "GET_CAR":
+        case "GET_CARS":
             return {
             ...state, cars: action.cars
         }

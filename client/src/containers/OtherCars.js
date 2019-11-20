@@ -5,7 +5,9 @@ import { getCars } from '../actions';
 
 export class OtherCars extends Component {
     componentDidMount() {
+        console.log("a")
         this.props.getCars()
+        console.log("b")
     }
 
     render() {

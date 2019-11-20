@@ -20,13 +20,16 @@ export const addCar = car => {
 }
 
 export const getCars = () => {
+    console.log("c")
     return dispatch => {
         fetch(baseUrl + '/api/cars')
         .then(res => res.json())
         .then(cars => {
-        dispatch({ type: "GET_CARS", cars})
+            console.log("d")
+        return dispatch({ type: "GET_CARS", cars})
         })
     }
+    console.log("e")
 }
 export const renderTips = id => {
     return dispatch => {
